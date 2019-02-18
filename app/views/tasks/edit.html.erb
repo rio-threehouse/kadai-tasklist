@@ -1,0 +1,7 @@
+<h1>編集ページ</h1>
+
+<%= form_for(@task) do |f| %>
+  <%= f.label :content, 'カラム' %>
+  <%= f.text_field :content %>
+  <%= f.submit '保存' %>
+<% end %>
