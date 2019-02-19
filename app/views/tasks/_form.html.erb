@@ -9,7 +9,11 @@
     </div>
  <% end %>
 
+  <%= f.label :status, 'ステータス' %>
+  <%= f.select :status, [["未完了","未完了"],["完了","完了"]] %>
+  
   <%= f.label :content, 'タスク' %>
   <%= f.text_field :content %>
+  
   <%= f.submit '保存' %>
 <% end %>
